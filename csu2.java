@@ -10,7 +10,7 @@ public class WeeklyTaxEstimator {
         double withholdingRate;
         double estimatedWithholding;
 
-        // Determine applicable tax withholding rate
+        // Determine tax withholding rate
         if (weeklyEarnings < 500) {
             withholdingRate = 0.10;
         } else if (weeklyEarnings < 1500) {
@@ -21,7 +21,7 @@ public class WeeklyTaxEstimator {
             withholdingRate = 0.30;
         }
 
-        // Calculate estimated tax withheld
+        // estimated tax withheld
         estimatedWithholding = weeklyEarnings * withholdingRate;
 
         System.out.printf("Estimated weekly tax withholding: $%.2f%n", estimatedWithholding);
